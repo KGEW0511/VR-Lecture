@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 5264559199097562053}
   - component: {fileID: 3543884542177319695}
   - component: {fileID: 5723376033519086047}
-  - component: {fileID: 1750375001595598462}
   - component: {fileID: 7910411315354413490}
   - component: {fileID: 2472551595007406141}
   - component: {fileID: 2219499957017568448}
+  - component: {fileID: 1342537670021920237}
   m_Layer: 22
   m_Name: Jack o lantern
   m_TagString: Untagged
@@ -78,8 +78,8 @@ MonoBehaviour:
   OnCreated:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1750375001595598462}
-        m_TargetAssemblyTypeName: ChangeAgentDestination, Assembly-CSharp
+      - m_Target: {fileID: 1342537670021920237}
+        m_TargetAssemblyTypeName: ChangeAgentDestinationToCore, Assembly-CSharp
         m_MethodName: Call
         m_Mode: 1
         m_Arguments:
@@ -246,19 +246,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1750375001595598462
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3249587780391327143}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a39d758da33d5940b1a935422fda8f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  destination: {x: 0, y: 2, z: 1}
 --- !u!114 &7910411315354413490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -313,6 +300,18 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.283
   m_Center: {x: 0, y: 0.2, z: 0}
+--- !u!114 &1342537670021920237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3249587780391327143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1251e183629fa3c4aacfde092f18cd27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8437994948870681946
 GameObject:
   m_ObjectHideFlags: 0
