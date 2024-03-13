@@ -1,7 +1,7 @@
-using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
+using System.Collections;
 using UnityEngine.Events;
+using UnityEngine;
 
 public class ReturnToTarget : MonoBehaviour
 {
@@ -36,9 +36,9 @@ public class ReturnToTarget : MonoBehaviour
             if (t >= 1f)
                 break;
 
-            t = curve.Evaluate(t);
+            t = curve.Evaluate(t); //가는데 걸리는 시간 조정
 
-            transform.position = Vector3.Lerp(transform.position, target.position, t);
+            transform.position = Vector3.Lerp(transform.position, target.position, t); //목표를 향해 오브잭트를 이동
 
             yield return null;
         }

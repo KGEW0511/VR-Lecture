@@ -12,7 +12,7 @@ public class Bomb : MonoBehaviour
         Drop,
     }
 
-    public float explosionRaius;
+    public float explosionRadius;
     public LayerMask explosionHittableMask;
 
     public float recycleDelay = 1f;
@@ -46,7 +46,7 @@ public class Bomb : MonoBehaviour
 
     private void Explosion()
     {
-        var overlaps = Physics.OverlapSphere(transform.position, explosionRaius, explosionHittableMask, QueryTriggerInteraction.Collide);
+        var overlaps = Physics.OverlapSphere(transform.position, explosionRadius, explosionHittableMask, QueryTriggerInteraction.Collide);
         foreach (var overlap in overlaps)
         {
             var hitObject = overlap.GetComponent<Hittable>();
